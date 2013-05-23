@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Logo</title>
+	</head>
+	<body>
+		<div class="name_css">CSS</div>
+		<div class="name_basics">BASICS</div>
+	</body>
+	
+	<style type="text/css">
+		.name_css{
+			float: left;
+			background: #AFAEB3;
+			color: #fff;	
+			padding: 0 1%;
+			/*font-size: 80px;*/
+			-webkit-transform: translate3d(0, 15%, 0);
+			-webkit-border-radius: 1px;
+			-webkit-border-top-right-radius: 0;
+			-webkit-border-bottom-right-radius: 0;
+		}
+		.name_basics{
+			background : #D0CFD4;
+			float:left;
+			border-radius: 1px;
+			-webkit-border-radius: 5px;
+			padding: 1% 1%;
+			font-size: 80px;
+			left:-10px;
+		}
+		
+		@media screen and (max-height:599px){
+			.name_basics{
+				font-size : 35px;
+			}
+			.name_css{
+				font-size : 30px;
+			}
+		}
+		@media screen and (min-height:600px){
+			.name_basics{
+				font-size : 80px;
+			}
+			.name_css{
+				font-size : 80px;
+			}
+		}
+	</style>
+</html>

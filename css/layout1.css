@@ -1,0 +1,129 @@
+/*
+	Layout css
+*/
+
+body{
+	background : #666666;
+	margin : 0;
+	padding : 0;
+}
+
+/*
+header{
+	position : relative;
+}
+*/
+
+
+.container{
+	height: 100%;
+	background : #E1E1E1;
+}
+
+.content_area{
+	width:50%;
+	height: 65%;
+}
+
+#left_container{
+	float : left;
+	background : #CCCCCC;
+}
+
+#right_container{
+	float: right;
+	background : #EEEEEE;
+}
+
+#add_footer_area{
+	background : #E1E1E1;
+	height: 10%;
+}
+
+
+/*
+	@Media Query
+*/
+
+@media screen and (min-width:600px) {
+  .container {
+	margin: 0 auto;
+	width: 60%;
+  }
+  header{
+  	height:20%;
+  }
+ }
+@media screen and (max-width:599px) {
+  .container {
+	margin:0;
+    width: 100%;
+  }
+  header{
+  	height:30%;
+  }
+}
+/*
+	Misc Helpers
+*/
+
+.box_modal{
+	box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+}
+
+.clearfix{
+	clear: both;
+}
+
+/*
+	Header
+*/
+
+.sponser{
+	background : #F0ECEB;
+	float: right;
+	padding : 1% 1% 3px 1%;
+	margin-right:5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 1px 4px 5px #CBCBCB;
+}
+
+		.name_css{
+			float: left;
+			background: #AFAEB3;
+			color: #fff;	
+			padding: 0 1%;
+			-webkit-transform: translate3d(0, 10%, 0);
+			-webkit-border-radius: 1px;
+			-webkit-border-top-right-radius: 0;
+			-webkit-border-bottom-right-radius: 0;
+		}
+		.name_basics{
+			background : #D0CFD4;
+			float:left;
+			border-radius: 1px;
+			-webkit-border-radius: 5px;
+			padding: 1% 1%;
+			left:-10px;
+		}
+		
+		@media screen and (max-height:599px){
+			.name_basics{
+				font-size : 35px;
+			}
+			.name_css{
+				font-size : 30px;
+			}
+		}
+		@media screen and (min-height:600px){
+			.name_basics{
+				font-size : 80px;
+			}
+			.name_css{
+				font-size : 80px;
+			}
+		}
+
