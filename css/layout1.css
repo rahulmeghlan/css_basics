@@ -21,16 +21,16 @@ header{
 
 .content_area{
 	width:50%;
-	height: 65%;
+	min-height: 65%;
 }
 
 #left_container{
-	float : left;
+	/*float : left;*/
 	background : #CCCCCC;
 }
 
 #right_container{
-	float: right;
+	/*float: right;*/
 	background : #EEEEEE;
 }
 
@@ -49,23 +49,27 @@ header{
 	margin: 0 auto;
 	width: 60%;
   }
-/*
-  header{
-  	height:20%;
-  }
-*/
  }
 @media screen and (max-width:599px) {
   .container {
 	margin:0;
     width: 100%;
   }
-/*
-  header{
-  	height:30%;
-  }
-*/
 }
+
+/*
+ Global overrides	
+*/
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover{
+	color : #fff;
+}
+
 /*
 	Misc Helpers
 */
@@ -144,3 +148,59 @@ header{
 				left: 25%;
 			}
 		}
+		
+/*
+	Menu Area
+*/		
+
+.menu_container{
+	font-family: "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;
+	padding: 1% 5% 0 2%;
+}
+
+.menu_container h2{
+	font-weight : normal;
+}
+
+.menu_container ul{
+	width: 80%;
+	list-style:none;
+}
+
+.menu_container li{
+	border-bottom: 1px solid #333333;
+	padding: 1% 0;
+}
+
+.menu_container li:hover{
+	background : #333333;
+}
+
+@media screen and(max-width:499px){
+	#left_container{
+	width: 100%;
+	max-height: 100px;
+	overflow: hidden;
+	}
+	
+	#right_container{
+	width: 100%;
+	}
+}
+
+@media screen and(min-width:600px){
+	#left_container{
+		float: left;
+	}
+	#right_container{
+		float: right;
+	}
+}
+
+/*
+	Content Area
+*/
+
+#index_header{
+	color : #563f27;
+}

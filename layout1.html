@@ -2,6 +2,19 @@
 	<head>
 		<title>layout 1</title>
 		<link rel="stylesheet" href="css/layout1.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var name;
+				for(var i = 1; i <= 18; i++){
+				name = "chapter " + i;
+				$("#menu_list").append('<li id="'+name+'"><a href="#">'+name+'</a></li>');
+				}
+				
+				$("#menu_list").append('<li id="download_chapters"><a href="#">Download all chapters</a></li>');
+				$("#menu_list").append('<li id="print_chapters"><a href="#">Print all chapters</a></li>');
+			});
+		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -20,10 +33,17 @@
 			<section id="add_area"></section>
 		</header>
 		<section id="left_container" class="box_modal content_area">
-			<section class="menu_container"></section>
+			<section class="menu_container">
+				<h2>Menu</h2>
+				<ul id="menu_list">
+					<li id="menu_home"><a href="#">Home</a></li>
+				</ul>
+			</section>
 			<section class="add_container"></section>
 		</section>
-		<section id="right_container" class="box_modal content_area"></section>
+		<section id="right_container" class="box_modal content_area">
+			<header id="index_header">Chapter 16</header>
+		</section>
 		<div class="clearfix"></div>
 		<section id="add_footer_area"></section>
 		<footer></footer>
