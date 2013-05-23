@@ -8,11 +8,10 @@ body{
 	padding : 0;
 }
 
-/*
+
 header{
-	position : relative;
+	padding : 10px 0 5% 0;
 }
-*/
 
 
 .container{
@@ -50,18 +49,22 @@ header{
 	margin: 0 auto;
 	width: 60%;
   }
+/*
   header{
   	height:20%;
   }
+*/
  }
 @media screen and (max-width:599px) {
   .container {
 	margin:0;
     width: 100%;
   }
+/*
   header{
   	height:30%;
   }
+*/
 }
 /*
 	Misc Helpers
@@ -89,18 +92,20 @@ header{
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	box-shadow: 1px 4px 5px #CBCBCB;
+	-webkit-transform: translateY(-10px);
 }
 
-		.name_css{
+.name_css{
 			float: left;
 			background: #AFAEB3;
 			color: #fff;	
-			padding: 0 1%;
+			/*padding: 0 1%;*/
 			-webkit-transform: translate3d(0, 10%, 0);
 			-webkit-border-radius: 1px;
 			-webkit-border-top-right-radius: 0;
 			-webkit-border-bottom-right-radius: 0;
-		}
+}
+
 		.name_basics{
 			background : #D0CFD4;
 			float:left;
@@ -110,12 +115,22 @@ header{
 			left:-10px;
 		}
 		
-		@media screen and (max-height:599px){
+		#logo{
+			top: 15%;
+			position:relative;
+		}
+
+
+		@media screen and (max-height:499px){
 			.name_basics{
 				font-size : 35px;
 			}
 			.name_css{
 				font-size : 30px;
+				-webkit-transform: translate3d(0, 85%, 0);
+			}
+			#logo{
+				left: 5%;
 			}
 		}
 		@media screen and (min-height:600px){
@@ -125,5 +140,7 @@ header{
 			.name_css{
 				font-size : 80px;
 			}
+			#logo{
+				left: 25%;
+			}
 		}
-
