@@ -42,7 +42,39 @@
 			<section class="add_container"></section>
 		</section>
 		<section id="right_container" class="box_modal content_area">
-			<header id="index_header">Chapter 16</header>
+			<section class="content_section">
+				<h2 class="content_section_heading">Overflow</h2>
+				<p class="grey">You can control what an elements contents will do if it overflows it boundaries with the overflow property</p>
+				<div class="white_box">
+					overflow: value;
+				</div>
+				<p>Values:</p>
+				<ul>
+					<li>auto</li>
+					<li>hidden</li>
+					<li>visible</li>
+					<li>scroll</li>
+				</ul>
+				<div class="scrollable_content">
+					<h3>Overflow Example</h3>
+					<div class="scrollable_area">
+					<section>As you can see, with this property you can mimic an iframe. This box is set to an overflow value of “auto”. Meaning that if the contents of the element break the boundaries it should add a scrollbar.</section>
+					<section>As you can see, with this property you can mimic an iframe. This box is set to an overflow value of “auto”. Meaning that if the contents of the element break the boundaries it should add a scrollbar.</section>
+					<section>As you can see, with this property you can mimic an iframe. This box is set to an overflow value of “auto”. Meaning that if the contents of the element break the boundaries it should add a scrollbar.</section>
+					</div>
+				</div>
+				
+				<p>Here is what I have in my CSS file.</p>
+				
+				<div class="white_box">
+					#overflow_box {width:200px; height:200px; border-top: 1px solid #eee; border-left: 1px solid #eee; border-bottom: 1px solid #eee; padding: 10px; overflow: auto;}
+				</div>
+				
+				<p>Then in the (X)HTML file I have this:</p>
+				
+				<p class="white_box">
+				</p>
+			</section>
 		</section>
 		<div class="clearfix"></div>
 		<section id="add_footer_area"></section>
